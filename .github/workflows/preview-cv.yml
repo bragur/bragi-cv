@@ -4,7 +4,7 @@ on:
   pull_request:
 
 permissions:
-  contents: read
+  contents: write
   pull-requests: write
 
 jobs:
@@ -19,39 +19,55 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y fonts-inter
 
       - name: Compile CV
-        run: typst compile --font-path /usr/share/fonts bragi_bergthorsson_cv.typ bragi_bergthorsson_cv.pdf
+        id: compile
+        run: |
+          typst compile --font-path /usr/share/fonts bragi_bergthorsson_cv.typ /tmp/cv.pdf
+          typst compile --font-path /usr/share/fonts bragi_bergthorsson_cv.typ /tmp/preview-{n}.png
+          echo "pages=$(ls /tmp/preview-*.png | wc -l | tr -d ' ')" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: cv-pdf
-          path: bragi_bergthorsson_cv.pdf
+      - name: Push preview assets
+        id: push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan preview
+          git rm -rf .
+          cp /tmp/cv.pdf /tmp/preview-*.png .
+          git add cv.pdf preview-*.png
+          git commit -m "Preview for PR #${{ github.event.pull_request.number }}"
+          git push origin preview --force
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-      - name: Post preview link
+      - name: Comment on PR
         uses: actions/github-script@v7
         with:
           script: |
-            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            const body = `### CV Preview\n\nCompiled PDF available for download in [workflow artifacts](${runUrl}#artifacts).`;
+            const pages = parseInt('${{ steps.compile.outputs.pages }}');
+            const sha = '${{ steps.push.outputs.sha }}';
+            const { owner, repo } = context.repo;
+            const prNumber = context.payload.pull_request.number;
+
+            const pdfUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${sha}/cv.pdf`;
+
+            let body = `### CV Preview\n\n`;
+            body += `**[View PDF](${pdfUrl})**\n\n`;
+
+            for (let i = 1; i <= pages; i++) {
+              const url = `https://raw.githubusercontent.com/${owner}/${repo}/${sha}/preview-${i}.png`;
+              body += `![Page ${i}](${url})\n\n`;
+            }
 
             const { data: comments } = await github.rest.issues.listComments({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
+              owner, repo, issue_number: prNumber,
             });
             const existing = comments.find(c => c.body?.includes('### CV Preview'));
 
             if (existing) {
               await github.rest.issues.updateComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                comment_id: existing.id,
-                body,
+                owner, repo, comment_id: existing.id, body,
               });
             } else {
               await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.issue.number,
-                body,
+                owner, repo, issue_number: prNumber, body,
               });
             }
