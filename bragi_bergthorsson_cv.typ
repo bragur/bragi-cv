@@ -251,11 +251,10 @@
   "August 2017 – December 2020",
   "Reykjavík, Iceland",
   [
-    Gangverk designed and maintained the digital platform for Sotheby's auction house, working on a microservices architecture with Scala/Go backends and TypeScript/ReasonML React frontends.
+    Gangverk designed and maintained the digital platform for Sotheby's auction house, working on a microservices architecture with Scala/Go backends and TypeScript/ReasonML React frontends. Initially hired to work on the Sotheby's mobile app, I moved to the registration team where my contributions led to stepping up as tech lead for the bidding team.
 
     #set text(size: 8.5pt)
     - Served as tech lead for the largest user-facing web application built in ReasonML with React
-    - Contributed significantly to login and registration flows, work that led to stepping up as tech lead for the bidding team
     - Identified and solved critical performance issues in the high-traffic bidding client from extremely slow load times, leading migration to NextJS and handling the majority of implementation work
     - Frontend-focused role with some backend exploration in Scala
     - Collaborated closely with designers on user experience
@@ -271,7 +270,7 @@
   "2015 – 2017",
   "Reykjavík, Iceland",
   [
-    Started the summer after my first year at university. Worked on web and mobile development projects, learning C\# and the Microsoft ecosystem while discovering my preference for JavaScript and frontend development.
+    Started the summer after my first year at university. Worked on web and mobile development projects, learning C\# and the Microsoft ecosystem while discovering my preference for JavaScript and frontend development. Was assigned to learn React Native and built several mobile apps for customers, experience that directly led to my next role at Gangverk.
   ]
 )
 
@@ -366,5 +365,5 @@
 
 #v(1fr)
 #align(right)[
-  #text(size: 8pt, fill: light)[Last revised: Feb, 2026]
+  #text(size: 8pt, fill: light)[Last revised: #datetime.today().display("[month repr:short], [year]")]
 ]
