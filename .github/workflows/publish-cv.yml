@@ -1,0 +1,56 @@
+name: Publish CV
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: typst-community/setup-typst@v4
+
+      - name: Install Inter font
+        run: sudo apt-get update && sudo apt-get install -y fonts-inter
+
+      - name: Compile CV
+        run: typst compile --font-path /usr/share/fonts bragi_bergthorsson_cv.typ bragi_bergthorsson_cv.pdf
+
+      - name: Prepare site
+        run: |
+          mkdir _site
+          cp bragi_bergthorsson_cv.pdf _site/
+          cat > _site/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head><meta http-equiv="refresh" content="0; url=bragi_bergthorsson_cv.pdf"></head>
+          <body><a href="bragi_bergthorsson_cv.pdf">Download CV</a></body>
+          </html>
+          EOF
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
