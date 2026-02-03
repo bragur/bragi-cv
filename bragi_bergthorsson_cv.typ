@@ -55,9 +55,14 @@
           #v(-0.2em)
           #set text(size: 8.5pt, fill: accent)
           bragur\@hey.com
-          #v(-0.5em)
-          ***
-          #v(-0.6em)
+          #let phone = sys.inputs.at("phone", default: "")
+          #if phone != "" {
+            v(-0.5em)
+            phone
+            v(-0.6em)
+          } else {
+            v(-0.6em)
+          }
           #link("https://linkedin.com/in/bragur")[linkedin.com/in/bragur]
         ]
         let size = measure(content)
@@ -95,9 +100,7 @@
       #text(size: 9pt, weight: 500, fill: heading-color)[References]
       #v(0.5em)
       #set text(size: 8.5pt, fill: muted)
-      *** - *** - ***\
-      *** - *** - ***\
-      *** - *** - ***
+      References available upon request
     ]
   ]
 ]
@@ -352,5 +355,5 @@
 
 #v(1fr)
 #align(right)[
-  #text(size: 8pt, fill: light)[Last revised: Jan, 2026]
+  #text(size: 8pt, fill: light)[Last revised: Feb, 2026]
 ]
