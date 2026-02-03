@@ -1,10 +1,9 @@
 // Bragi's CV - Cover Letter + Experience
 // Refined greyscale with warm brown accents
 
-#set page(
-  paper: "a4",
-  margin: (left: 2.5cm, right: 2.5cm, top: 2cm, bottom: 2cm),
-)
+#set document(title: "Bragi Bergþórsson - CV", author: "Bragi Bergþórsson")
+
+#set page(paper: "a4")
 
 #set text(
   font: "Inter",
@@ -30,9 +29,6 @@
 // Circle bullet points in muted brown, vertically centered
 #set list(marker: box(height: 0.8em, align(horizon, text(fill: accent, size: 0.4em)[●])))
 
-// Styled link function for highlighted links
-#let styled-link(url, label) = text(weight: 600, fill: accent)[#underline[#link(url)[#label]]]
-
 // =====================================================
 // PAGE 1 - COVER LETTER
 // =====================================================
@@ -45,74 +41,68 @@
 #pad(left: 32pt, right: 32pt)[
   #block(width: 100%)[
     // Letterhead with left accent bar
-    #align(left)[
-      #context {
-        let content = block[
-          #set par(leading: 0.5em)
-          #text(weight: 600, size: 11pt)[Bragi Bergþórsson]
-          #v(-0.7em)
-          #text(size: 9.5pt, weight: 600, fill: warm-orange)[Product Engineer]
-          #v(-0.2em)
-          #set text(size: 8.5pt, fill: accent)
-          bragur\@hey.com
-          #let phone = sys.inputs.at("phone", default: "")
-          #if phone != "" {
-            v(-0.5em)
-            phone
-            v(-0.6em)
-          } else {
-            v(-0.6em)
-          }
-          #link("https://linkedin.com/in/bragur")[linkedin.com/in/bragur]
+    #context {
+      let letterhead = block[
+        #set par(leading: 0.5em)
+        #text(weight: 600, size: 11pt)[Bragi Bergþórsson]
+        #v(-0.7em)
+        #text(size: 9.5pt, weight: 600, fill: warm-orange)[Product Engineer]
+        #v(-0.2em)
+        #set text(size: 8.5pt, fill: accent)
+        bragur\@hey.com
+        #let phone = sys.inputs.at("phone", default: "")
+        #if phone != "" {
+          v(-0.5em)
+          phone
+          v(-0.6em)
+        } else {
+          v(-0.6em)
+        }
+        #link("https://linkedin.com/in/bragur")[linkedin.com/in/bragur]
+      ]
+      let size = measure(letterhead)
+      block[
+        #place(left, dx: -24pt, dy: -1pt)[
+          #rect(width: 8pt, height: size.height + 2pt, fill: accent)
         ]
-        let size = measure(content)
-        block[
-          #place(left, dx: -24pt, dy: -1pt)[
-            #rect(width: 8pt, height: size.height + 2pt, fill: accent)
-          ]
-          #content
-        ]
-      }
-    ]
+        #letterhead
+      ]
+    }
 
     #v(5em)
 
     // About content
-    #align(left)[
-      #set text(fill: primary, size: 9.5pt)
-      #set par(leading: 0.8em)
+    #set text(fill: primary, size: 9.5pt)
+    #set par(leading: 0.8em)
 
-      I'm a product engineer who's spent the last decade building digital products with a focus on UI/UX. I work closely with designers throughout development, making sure what we create is both beautiful and actually buildable, and that technical decisions improve rather than compromise the user experience. I'm drawn to teams who value craft and velocity in equal measure, who ship fast but sweat the details that matter.
+    I'm a product engineer who's spent the last decade building digital products with a focus on UI/UX. I work closely with designers throughout development, making sure what we create is both beautiful and actually buildable, and that technical decisions improve rather than compromise the user experience. I'm drawn to teams who value craft and velocity in equal measure, who ship fast but sweat the details that matter.
 
-      #v(0.8em)
+    #v(0.8em)
 
-      My background in photography and early interest in design shape how I think about product development. I care about the full experience: how things look, how they flow, how they respond to interaction and whether they actually solve the problem. I've spent years deeply involved in user testing and iteration, learning to balance user needs with technical feasibility while maintaining the speed needed to learn and improve.
+    My background in photography and early interest in design shape how I think about product development. I care about the full experience: how things look, how they flow, how they respond to interaction and whether they actually solve the problem. I've spent years deeply involved in user testing and iteration, learning to balance user needs with technical feasibility while maintaining the speed needed to learn and improve.
 
-      #v(0.8em)
+    #v(0.8em)
 
-      Before switching to tech at 33, I spent years as an opera singer, which taught me discipline, performance under pressure and clear communication. Outside of work I'm a husband and father of three in Vesturbær, Reykjavík, with a dog named Tumi, maker of sourdough and espresso, and someone who probably overthinks your interface design in a good way.
-    ]
+    Before switching to tech at 33, I spent years as an opera singer, which taught me discipline, performance under pressure and clear communication. Outside of work I'm a husband and father of three in Vesturbær, Reykjavík, with a dog named Tumi, maker of sourdough and espresso, and someone who probably overthinks your interface design in a good way.
 
     #v(3em)
 
     // References
-    #align(left)[
-      #text(size: 9pt, weight: 500, fill: heading-color)[References]
-      #v(0.5em)
-      #set text(size: 8.5pt, fill: muted)
-      #let ref1 = sys.inputs.at("ref1", default: "")
-      #let ref2 = sys.inputs.at("ref2", default: "")
-      #let ref3 = sys.inputs.at("ref3", default: "")
-      #if ref1 != "" {
-        ref1
-        linebreak()
-        ref2
-        linebreak()
-        ref3
-      } else {
-        [References available upon request]
-      }
-    ]
+    #text(size: 9pt, weight: 500, fill: heading-color)[References]
+    #v(0.5em)
+    #set text(size: 8.5pt, fill: muted)
+    #let ref1 = sys.inputs.at("ref1", default: "")
+    #let ref2 = sys.inputs.at("ref2", default: "")
+    #let ref3 = sys.inputs.at("ref3", default: "")
+    #if ref1 != "" {
+      ref1
+      linebreak()
+      ref2
+      linebreak()
+      ref3
+    } else {
+      [References available upon request]
+    }
   ]
 ]
 
@@ -124,46 +114,31 @@
 #pagebreak()
 #set page(margin: (left: 2.5cm, right: 2.5cm, top: 3.5cm, bottom: 2cm))
 
-// Section helper - indented to align with content column
-#let section(title, content) = {
-  v(0.6em)
-  pad(left: 32pt)[
-    #text(size: 9pt, weight: 500, fill: heading-color)[#title]
-  ]
-  v(0.3em)
-  line(length: 100%, stroke: 0.3pt + subtle)
-  v(0.6em)
-  content
-}
-
 // Timeline components
-#let timeline-dot = box(
+#let timeline-square = box(
   width: 8pt,
   height: 8pt,
   fill: accent,
 )
 
-#let experience-entry(title, company, dates, location, content) = {
+#let experience-entry(title, company, dates, location, body) = {
   grid(
     columns: (20pt, 1fr),
     column-gutter: 12pt,
     [
       #align(center + top)[
-        #v(0pt)
-        #timeline-dot
+        #timeline-square
       ]
     ],
     [
       #text(weight: 600, size: 10.5pt, fill: primary)[#title]
-      #h(0pt)
       #text(fill: warm-orange, weight: 600, size: 10.5pt)[×]
-      #h(0pt)
       #text(fill: muted, size: 10.5pt)[#company]
       #v(-0.4em)
       #text(size: 8.5pt, fill: accent)[#dates #h(2pt) · #h(2pt) #location]
       #v(0.5em)
       #set text(size: 9.5pt, fill: primary)
-      #content
+      #body
       #v(0.8em)
     ]
   )
