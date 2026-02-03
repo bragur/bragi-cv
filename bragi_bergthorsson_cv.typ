@@ -100,7 +100,18 @@
       #text(size: 9pt, weight: 500, fill: heading-color)[References]
       #v(0.5em)
       #set text(size: 8.5pt, fill: muted)
-      References available upon request
+      #let ref1 = sys.inputs.at("ref1", default: "")
+      #let ref2 = sys.inputs.at("ref2", default: "")
+      #let ref3 = sys.inputs.at("ref3", default: "")
+      #if ref1 != "" {
+        ref1
+        linebreak()
+        ref2
+        linebreak()
+        ref3
+      } else {
+        [References available upon request]
+      }
     ]
   ]
 ]
