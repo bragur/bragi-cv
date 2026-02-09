@@ -150,31 +150,29 @@
   "December 2020 – January 2026",
   "Reykjavík, Iceland",
   [
-    Drove end-to-end product development for analytics tools used by companies including Adobe, IKEA, Delivery Hero and Wolt. Operating across the full stack from React and ReScript frontends to Firebase functions and CI/CD, I maintained rapid product velocity while being deliberate about what mattered: performance optimization, UX refinement through user testing and developer experience.
+    Shipped product features end-to-end for analytics tools used by companies including Adobe, IKEA, Delivery Hero and Wolt. Worked across the full stack from React and ReScript frontends to Firebase functions and CI/CD, maintaining product velocity while being deliberate about what mattered: performance optimization, UX refinement through user testing and developer experience.
 
     #v(1em)
     #set text(size: 8.5pt)
     #text(weight: 500, fill: heading-color)[Internal AI Development Infrastructure]
     #v(0.3em)
-    - Built and refined AI-accelerated development workflow, evolving from Cursor to Claude Code with custom agents, skills and integrations. By autumn 2025, this approach became my primary development method while maintaining quality standards
-    - Created and maintained automation workflows that became core to the team's development velocity, enabling faster iteration cycles without sacrificing code quality
-    - Established patterns and practices for AI-assisted development that were adopted across the engineering team
+    - Built AI-accelerated development workflows evolving from Cursor to Claude Code with custom agents, skills and integrations. By autumn 2025 this was my primary development method
+    - Created automation workflows that became core to the team's development process
+    - Adopted and built on structured retrospective practices developed by a colleague, where each project's lessons fed back into the team's shared tooling
 
     #v(1em)
     #text(weight: 500, fill: heading-color)[Product Development]
     #v(0.3em)
-    - Drove feature development from design through deployment, including a complex Figma-like interface feature (Journeys) that received strong positive user feedback, using AI-accelerated development to maintain velocity on technically demanding work
+    - Shipped features from design through deployment, including a complex Figma-like interface feature (Journeys) that received strong positive user feedback, using AI-accelerated development to maintain velocity on technically demanding work
     - Implemented and refined UI for AI-powered product features including agent workflows, iterating on both prompts and user experience until the interaction felt natural
-    - Led performance optimization efforts including compiler improvements and data structure redesigns (moving from linked-list heavy models to ordered maps) that measurably improved load times and user experience
-    - Improved CI/CD pipeline performance by switching out bundlers and build tools, reducing deployment friction for the entire team
+    - Led performance optimization including compiler improvements and data structure redesigns (moving from linked-list heavy models to ordered maps) that improved load times
+    - Improved CI/CD pipeline performance by switching out bundlers and build tools, reducing deployment friction
 
     #v(1em)
     #text(weight: 500, fill: heading-color)[Team & Culture]
     #v(0.3em)
-    - Collaborated closely with designers through regular design reviews and iteration cycles, balancing design vision with technical feasibility and contributing to both design direction and implementation decisions
-    - Participated in hiring, focusing on engineers who valued learning and craft over credentials
-    - Mentored engineers through code review, pair programming and technical guidance
-    - Contributed to building a culture of quality and continuous improvement
+    - Collaborated closely with designers through regular design reviews, balancing design vision with technical feasibility
+    - Participated in hiring and mentoring, focusing on engineers who valued learning and craft over credentials
   ]
 )
 
