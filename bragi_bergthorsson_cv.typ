@@ -156,9 +156,9 @@
     #set text(size: 8.5pt)
     #text(weight: 500, fill: heading-color)[Internal AI Development Infrastructure]
     #v(0.3em)
-    - Built AI-accelerated development workflows evolving from Cursor to Claude Code with custom agents, skills and integrations. By autumn 2025 this was my primary development method
-    - Created automation workflows that became core to the team's development process
-    - Adopted and built on structured retrospective practices developed by a colleague, where each project's lessons fed back into the team's shared tooling
+    - Built AI-accelerated development workflows evolving from Cursor to Claude Code with custom agents, skills and integrations. By autumn 2025 this was my primary development method while maintaining quality standards
+    - Created automation workflows that became core to the team's development process, enabling faster iteration without sacrificing code quality
+    - Adopted and built on structured retrospective in-house practices, where each project's lessons fed back into the team's shared tooling
 
     #v(1em)
     #text(weight: 500, fill: heading-color)[Product Development]
@@ -173,6 +173,7 @@
     #v(0.3em)
     - Collaborated closely with designers through regular design reviews, balancing design vision with technical feasibility
     - Participated in hiring and mentoring, focusing on engineers who valued learning and craft over credentials
+    - Contributed to building a culture of quality and continuous improvement
   ]
 )
 
