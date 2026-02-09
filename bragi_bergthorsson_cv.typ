@@ -165,7 +165,7 @@
     #v(0.3em)
     - Shipped features from design through deployment, including a complex Figma-like interface feature (Journeys) that received strong positive user feedback, using AI-accelerated development to maintain velocity on technically demanding work
     - Implemented and refined UI for AI-powered product features including agent workflows, iterating on both prompts and user experience until the interaction felt natural
-    - Led performance optimization including compiler improvements and data structure redesigns (moving from linked-list heavy models to ordered maps) that improved load times
+    - Led performance optimization efforts including compiler improvements and data structure redesigns (moving from linked-list heavy models to ordered maps) that measurably improved load times and user experience
     - Improved CI/CD pipeline performance by switching out bundlers and build tools, reducing deployment friction
 
     #v(1em)
