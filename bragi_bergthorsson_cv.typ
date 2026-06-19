@@ -146,38 +146,42 @@
 
 #experience-entry(
   "Product Engineer",
+  "Leviosa",
+  "March 2026 – Present",
+  "Reykjavík, Iceland",
+  [
+    Joined as a full-stack developer at Leviosa, a multi-tenant EHR platform that brings scheduling, collaboration and clinical documentation into one environment for healthcare providers and their patients. Shipping production features end-to-end in a regulated healthcare domain, increasingly through AI-driven, agentic workflows.
+
+    #v(1em)
+    #set text(size: 8.5pt)
+    - Drove feature delivery through an AI-native workflow — orchestrating custom agents, skills and parallel worktree workflows to ship production-grade features, directing and reviewing rather than hand-writing code, showing that agentic development is ready for real product work
+    - Built a complete patient questionnaire and intake experience across the stack: patient-portal forms with autosave and draft recovery, live status and answer views for providers in the clinic portal, and a dedicated questionnaire microservice with audit events, service-to-service auth and AWS/ECS deployment
+    - Built the internal delivery infrastructure that makes agentic development reliable — a multi-stage QA verification harness, deterministic seed data with Playwright end-to-end coverage, and fast preview deployments across isolated worktrees
+    - Worked full-stack across a React/TypeScript frontend and Node and Rust/GraphQL services, PostgreSQL and Terraform-managed AWS infrastructure
+  ]
+)
+
+#v(1em)
+
+#experience-entry(
+  "Product Engineer",
   "Avo",
   "December 2020 – January 2026",
   "Reykjavík, Iceland",
   [
-    Shipped product features end-to-end for analytics tools used by companies including Adobe, IKEA, Delivery Hero and Wolt. Worked across the full stack from React and ReScript frontends to Firebase functions and CI/CD, maintaining product velocity while being deliberate about what mattered: performance optimization, UX refinement through user testing and developer experience.
+    Shipped product features end-to-end for analytics tools used by companies including Adobe, IKEA, Delivery Hero and Wolt. Worked across the full stack from React and ReScript frontends to Firebase functions and CI/CD, maintaining product velocity while being deliberate about what mattered: performance optimization, UX refinement through user testing and developer experience. Late on, I pioneered the team's adoption of AI-accelerated development — from Cursor to Claude Code with custom agents and skills — until it became my primary method and core to the team's process.
 
     #v(1em)
     #set text(size: 8.5pt)
-    #text(weight: 500, fill: heading-color)[Internal AI Development Infrastructure]
-    #v(0.3em)
-    - Built AI-accelerated development workflows evolving from Cursor to Claude Code with custom agents, skills and integrations. By autumn 2025 this was my primary development method while maintaining quality standards
-    - Created automation workflows that became core to the team's development process, enabling faster iteration without sacrificing code quality
-    - Adopted and built on structured retrospective in-house practices, where each project's lessons fed back into the team's shared tooling
-
-    #v(1em)
-    #text(weight: 500, fill: heading-color)[Product Development]
-    #v(0.3em)
     - Shipped features from design through deployment, including a complex Figma-like interface feature (Journeys) that received strong positive user feedback, using AI-accelerated development to maintain velocity on technically demanding work
     - Implemented and refined UI for AI-powered product features including agent workflows, iterating on both prompts and user experience until the interaction felt natural
-    - Led performance optimization efforts including compiler improvements and data structure redesigns (moving from linked-list heavy models to ordered maps) that measurably improved load times and user experience
-    - Improved CI/CD pipeline performance by switching out bundlers and build tools, reducing deployment friction
-
-    #v(1em)
-    #text(weight: 500, fill: heading-color)[Team & Culture]
-    #v(0.3em)
+    - Led performance optimization efforts — compiler improvements, data structure redesigns (moving from linked-list heavy models to ordered maps) and faster CI/CD via new bundlers and build tools — measurably improving load times and reducing deployment friction
     - Collaborated closely with designers through regular design reviews, balancing design vision with technical feasibility
-    - Participated in hiring and mentoring, focusing on engineers who valued learning and craft over credentials
-    - Contributed to building a culture of quality and continuous improvement
+    - Participated in hiring and mentoring and helped build a culture of quality and continuous improvement, focusing on engineers who valued learning and craft over credentials
   ]
 )
 
-#v(2em)
+#v(1em)
 
 // Skills card
 #pad(left: 32pt)[
@@ -185,7 +189,7 @@
   width: 100%,
   fill: block-bg,
   radius: 3pt,
-  inset: (x: 16pt, y: 14pt),
+  inset: (x: 16pt, y: 12pt),
 )[
   #set text(size: 8.5pt, fill: primary)
   #text(size: 9pt, weight: 500, fill: heading-color)[Skills]
@@ -194,7 +198,7 @@
   #grid(
     columns: (auto, 1fr),
     column-gutter: 14pt,
-    row-gutter: 8pt,
+    row-gutter: 6pt,
 
     text(weight: 500, fill: heading-color)[Product & AI],
     [Product engineering, design collaboration, UX/UI design thinking, user testing and iteration, AI-accelerated development, developer experience, performance optimization],
