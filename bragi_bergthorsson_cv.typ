@@ -150,14 +150,14 @@
   "March 2026 – Present",
   "Reykjavík, Iceland",
   [
-    Joined as a full-stack developer at Leviosa, a multi-tenant EHR platform that brings scheduling, collaboration and clinical documentation into one environment for healthcare providers and their patients. Shipping production features end-to-end in a regulated healthcare domain, increasingly through AI-driven, agentic workflows.
+    Joined as a full-stack developer at Leviosa, a multi-tenant EHR platform that brings scheduling, collaboration, and clinical documentation into one place for healthcare providers and their patients. I ship production features in a regulated healthcare domain, and increasingly do it through AI-driven, agentic workflows.
 
     #v(1em)
     #set text(size: 8.5pt)
-    - Drove feature delivery through an AI-native workflow — orchestrating custom agents, skills and parallel worktree workflows to ship production-grade features, directing and reviewing rather than hand-writing code, showing that agentic development is ready for real product work
-    - Built a complete patient questionnaire and intake experience across the stack: patient-portal forms with autosave and draft recovery, live status and answer views for providers in the clinic portal, and a dedicated questionnaire microservice with audit events, service-to-service auth and AWS/ECS deployment
-    - Built the internal delivery infrastructure that makes agentic development reliable — a multi-stage QA verification harness, deterministic seed data with Playwright end-to-end coverage, and fast preview deployments across isolated worktrees
-    - Worked full-stack across a React/TypeScript frontend and Node and Rust/GraphQL services, PostgreSQL and Terraform-managed AWS infrastructure
+    - Built Bottega, an internal platform of self-orchestrating AI agents that carries a task through the full delivery pipeline: spec, planning, implementation, code review, and QA, backed by deterministic seed data and Playwright coverage of the real flows
+    - Deliver day-to-day features through this AI-native workflow, orchestrating custom agents and skills across parallel worktrees and reviewing the output instead of writing the code by hand
+    - Shipped a patient questionnaire and intake flow across the stack: patient-portal forms with autosave and draft recovery, live status and answer views for providers, and a questionnaire service with audit events, service-to-service auth, and AWS/ECS deployment
+    - Work full-stack across a React/TypeScript frontend with Node and Rust/GraphQL services, PostgreSQL, and Terraform-managed AWS
   ]
 )
 
@@ -169,15 +169,15 @@
   "December 2020 – January 2026",
   "Reykjavík, Iceland",
   [
-    Shipped product features end-to-end for analytics tools used by companies including Adobe, IKEA, Delivery Hero and Wolt. Worked across the full stack from React and ReScript frontends to Firebase functions and CI/CD, maintaining product velocity while being deliberate about what mattered: performance optimization, UX refinement through user testing and developer experience. Late on, I pioneered the team's adoption of AI-accelerated development — from Cursor to Claude Code with custom agents and skills — until it became my primary method and core to the team's process.
+    Shipped features for analytics tools used by companies including Adobe, IKEA, Delivery Hero, and Wolt. I worked across the stack, from React and ReScript frontends to Firebase functions and CI/CD, with a focus on performance, UX refinement through user testing, and developer experience. Later I brought AI-accelerated development to the team, moving from Cursor to Claude Code with custom agents and skills, and it became how I did most of my work.
 
     #v(1em)
     #set text(size: 8.5pt)
-    - Shipped features from design through deployment, including a complex Figma-like interface feature (Journeys) that received strong positive user feedback, using AI-accelerated development to maintain velocity on technically demanding work
-    - Implemented and refined UI for AI-powered product features including agent workflows, iterating on both prompts and user experience until the interaction felt natural
-    - Led performance optimization efforts — compiler improvements, data structure redesigns (moving from linked-list heavy models to ordered maps) and faster CI/CD via new bundlers and build tools — measurably improving load times and reducing deployment friction
-    - Collaborated closely with designers through regular design reviews, balancing design vision with technical feasibility
-    - Participated in hiring and mentoring and helped build a culture of quality and continuous improvement, focusing on engineers who valued learning and craft over credentials
+    - Built Journeys, a complex Figma-like canvas interface that drew strong user feedback, leaning on AI-accelerated development for the harder parts
+    - Built and refined the UI for AI-powered features, including agent workflows, tuning both the prompts and the interaction design
+    - Led performance work: compiler improvements, data-structure redesigns (from linked-list-heavy models to ordered maps), and faster CI/CD through new bundlers, which cut load times and deployment friction
+    - Worked with designers in regular reviews, keeping the work faithful to the design and buildable
+    - Helped hire and mentor engineers, looking for people who cared about craft and learning over credentials
   ]
 )
 
@@ -193,11 +193,11 @@
   "August 2017 – December 2020",
   "Reykjavík, Iceland",
   [
-    Gangverk designed and maintained the digital platform for Sotheby's auction house — a microservices architecture with Scala/Go backends and TypeScript/ReasonML React frontends. I joined on the mobile app, moved to the registration team, and stepped up as tech lead for the bidding team.
+    Gangverk built and ran the digital platform for Sotheby's auction house, a microservices setup with Scala/Go backends and TypeScript/ReasonML React frontends. I joined on the mobile app, moved to the registration team, and became tech lead for the bidding team.
 
     #set text(size: 8.5pt)
-    - Served as tech lead for the largest user-facing web application, built in ReasonML with React
-    - Diagnosed and fixed critical performance issues in the high-traffic bidding client, leading its migration to Next.js and handling the majority of the implementation
+    - Was tech lead for the largest user-facing app, built in ReasonML and React
+    - Diagnosed and fixed critical performance issues in the high-traffic bidding client, leading its migration to Next.js and doing most of the implementation
   ]
 )
 
@@ -209,7 +209,7 @@
   "2015 – 2017",
   "Reykjavík, Iceland",
   [
-    Started the summer after my first year at university, working on web and mobile projects in C\# and the Microsoft ecosystem while discovering my preference for JavaScript and frontend. Learned React Native and shipped several customer mobile apps — experience that led directly to Gangverk.
+    Started the summer after my first year at university, working on web and mobile projects in C\# and the Microsoft stack, where I found my preference for JavaScript and frontend. I learned React Native and shipped several customer apps, which led directly to Gangverk.
   ]
 )
 
@@ -221,7 +221,7 @@
   "2011 – 2014",
   "Stralsund, Germany",
   [
-    Professional opera singer performing lead roles in Germany — a career that taught me discipline, performance under pressure and clear communication that carry directly into engineering.
+    Professional opera singer performing lead roles in Germany. The work taught me discipline, performance under pressure, and clear communication, all of which carry into engineering.
   ]
 )
 
@@ -244,17 +244,17 @@
     column-gutter: 14pt,
     row-gutter: 6pt,
 
-    text(weight: 500, fill: heading-color)[Product & AI],
-    [Product engineering, design collaboration, UX/UI design thinking, user testing and iteration, AI-accelerated development, developer experience, performance optimization],
+    text(weight: 500, fill: heading-color)[AI-Native Development],
+    [Agentic workflows, multi-agent orchestration, Claude Code (custom agents, skills, hooks), building internal AI delivery platforms (Bottega), prompt and context engineering, evals and QA harnesses],
+
+    text(weight: 500, fill: heading-color)[Product & Design],
+    [Product engineering, design collaboration, UX/UI thinking, user testing and iteration, accessibility, performance optimization],
 
     text(weight: 500, fill: heading-color)[Languages & Frameworks],
-    [ReScript, JavaScript, React, HTML/CSS, Shell scripting],
+    [TypeScript, ReScript, JavaScript, React, Rust, GraphQL, HTML/CSS, Shell],
 
     text(weight: 500, fill: heading-color)[Tools & Infrastructure],
-    [Git, Firebase, CircleCI, Google Cloud, CI/CD pipelines],
-
-    text(weight: 500, fill: heading-color)[Practices],
-    [Code review, mentoring, technical documentation, accessibility, Shape Up methodology],
+    [Git, AWS, Terraform, PostgreSQL, Firebase, CI/CD, Playwright],
   )
 ]]
 
