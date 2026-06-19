@@ -75,11 +75,11 @@
     #set text(fill: primary, size: 9.5pt)
     #set par(leading: 0.8em)
 
-    I'm a product engineer who's spent the last decade building digital products with a focus on UI/UX. I work closely with designers throughout development, making sure what we create is both beautiful and actually buildable, and that technical decisions improve rather than compromise the user experience. I'm drawn to teams who value craft and velocity in equal measure, who ship fast but sweat the details that matter.
+    I'm a product engineer, and I've spent the last decade building digital products with a focus on UI/UX. I like working closely with designers while we build, so that what ships looks good, is actually buildable, and the technical calls make the experience better rather than worse. I'm happiest on teams that care about craft but still move fast.
 
     #v(0.8em)
 
-    My background in photography and early interest in design shape how I think about product development. I care about the full experience: how things look, how they flow, how they respond to interaction and whether they actually solve the problem. I've spent years deeply involved in user testing and iteration, learning to balance user needs with technical feasibility while maintaining the speed needed to learn and improve.
+    My background in photography and a long interest in design shape how I approach product work. I care about the whole thing, not just how something looks but how it feels to use and whether it actually solves the problem. I've spent years close to user testing and iteration, learning where to trade off what users want against what's feasible without slowing down so much that we stop learning.
 
     #v(0.8em)
 
@@ -146,75 +146,43 @@
 
 #experience-entry(
   "Product Engineer",
+  "Leviosa",
+  "March 2026 – Present",
+  "Reykjavík, Iceland",
+  [
+    Joined as a full-stack developer at Leviosa, a practice-management platform built for healthcare providers that brings scheduling, clinical documentation, and patient flow into one place to cut administrative burden and give clinicians more time with patients. I ship production features in a regulated healthcare domain, and increasingly do it through AI-driven, agentic workflows.
+
+    #v(1em)
+    #set text(size: 8.5pt)
+    - Develop through an AI-native workflow built on my own agent tooling: self-orchestrating agents that carry a task from spec and planning through implementation, code review, and QA, with deterministic seed data and Playwright coverage of the real flows
+    - Orchestrate custom agents and skills across parallel worktrees, directing and reviewing the output instead of writing the code by hand
+    - Deliver features end-to-end across the stack: responsive frontend flows with autosave and draft recovery, real-time status and review views, and backend services with audit events, service-to-service auth, and AWS/ECS deployment
+    - Work full-stack across a React/TypeScript frontend with Node and Rust/GraphQL services, PostgreSQL, and Terraform-managed AWS
+  ]
+)
+
+#v(1em)
+
+#experience-entry(
+  "Product Engineer",
   "Avo",
   "December 2020 – January 2026",
   "Reykjavík, Iceland",
   [
-    Shipped product features end-to-end for analytics tools used by companies including Adobe, IKEA, Delivery Hero and Wolt. Worked across the full stack from React and ReScript frontends to Firebase functions and CI/CD, maintaining product velocity while being deliberate about what mattered: performance optimization, UX refinement through user testing and developer experience.
+    Shipped features for analytics tools used by companies including Adobe, IKEA, Delivery Hero, and Wolt. I worked across the stack, from React and ReScript frontends to Firebase functions and CI/CD, with a focus on performance, UX refinement through user testing, and developer experience. Later I brought AI-accelerated development to the team, moving from Cursor to Claude Code with custom agents and skills, and it became how I did most of my work.
 
     #v(1em)
     #set text(size: 8.5pt)
-    #text(weight: 500, fill: heading-color)[Internal AI Development Infrastructure]
-    #v(0.3em)
-    - Built AI-accelerated development workflows evolving from Cursor to Claude Code with custom agents, skills and integrations. By autumn 2025 this was my primary development method while maintaining quality standards
-    - Created automation workflows that became core to the team's development process, enabling faster iteration without sacrificing code quality
-    - Adopted and built on structured retrospective in-house practices, where each project's lessons fed back into the team's shared tooling
-
-    #v(1em)
-    #text(weight: 500, fill: heading-color)[Product Development]
-    #v(0.3em)
-    - Shipped features from design through deployment, including a complex Figma-like interface feature (Journeys) that received strong positive user feedback, using AI-accelerated development to maintain velocity on technically demanding work
-    - Implemented and refined UI for AI-powered product features including agent workflows, iterating on both prompts and user experience until the interaction felt natural
-    - Led performance optimization efforts including compiler improvements and data structure redesigns (moving from linked-list heavy models to ordered maps) that measurably improved load times and user experience
-    - Improved CI/CD pipeline performance by switching out bundlers and build tools, reducing deployment friction
-
-    #v(1em)
-    #text(weight: 500, fill: heading-color)[Team & Culture]
-    #v(0.3em)
-    - Collaborated closely with designers through regular design reviews, balancing design vision with technical feasibility
-    - Participated in hiring and mentoring, focusing on engineers who valued learning and craft over credentials
-    - Contributed to building a culture of quality and continuous improvement
+    - Built Journeys, a complex Figma-like canvas interface that drew strong user feedback, leaning on AI-accelerated development for the harder parts
+    - Built and refined the UI for AI-powered features, including agent workflows, tuning both the prompts and the interaction design
+    - Led performance work: compiler improvements, data-structure redesigns (from linked-list-heavy models to ordered maps), and faster CI/CD through new bundlers, which cut load times and deployment friction
+    - Worked with designers in regular reviews, keeping the work faithful to the design and buildable
+    - Helped hire and mentor engineers, looking for people who cared about craft and learning over credentials
   ]
 )
 
-#v(2em)
-
-// Skills card
-#pad(left: 32pt)[
-#box(
-  width: 100%,
-  fill: block-bg,
-  radius: 3pt,
-  inset: (x: 16pt, y: 14pt),
-)[
-  #set text(size: 8.5pt, fill: primary)
-  #text(size: 9pt, weight: 500, fill: heading-color)[Skills]
-  #v(0.5em)
-
-  #grid(
-    columns: (auto, 1fr),
-    column-gutter: 14pt,
-    row-gutter: 8pt,
-
-    text(weight: 500, fill: heading-color)[Product & AI],
-    [Product engineering, design collaboration, UX/UI design thinking, user testing and iteration, AI-accelerated development, developer experience, performance optimization],
-
-    text(weight: 500, fill: heading-color)[Languages & Frameworks],
-    [ReScript, JavaScript, React, HTML/CSS, Shell scripting],
-
-    text(weight: 500, fill: heading-color)[Tools & Infrastructure],
-    [Git, Firebase, CircleCI, Google Cloud, CI/CD pipelines],
-
-    text(weight: 500, fill: heading-color)[Practices],
-    [Code review, mentoring, technical documentation, accessibility, Shape Up methodology],
-  )
-
-  #v(0.4em)
-  #text(size: 8pt, fill: muted)[#emph[Note: My experience with ReScript's strict type system provides a strong foundation for quickly adapting to TypeScript]]
-]]
-
 // =====================================================
-// PAGE 3 - EARLIER EXPERIENCE + EDUCATION
+// PAGE 3 - EARLIER EXPERIENCE + SKILLS + EDUCATION
 // =====================================================
 #pagebreak()
 #set page(margin: (left: 2.5cm, right: 2.5cm, top: 2.5cm, bottom: 2cm))
@@ -225,18 +193,15 @@
   "August 2017 – December 2020",
   "Reykjavík, Iceland",
   [
-    Gangverk designed and maintained the digital platform for Sotheby's auction house, working on a microservices architecture with Scala/Go backends and TypeScript/ReasonML React frontends. Initially hired to work on the Sotheby's mobile app, I moved to the registration team where my contributions led to stepping up as tech lead for the bidding team.
+    Gangverk built and ran the digital platform for Sotheby's auction house, a microservices setup with Scala/Go backends and TypeScript/ReasonML React frontends. I joined on the mobile app, moved to the registration team, and became tech lead for the bidding team.
 
     #set text(size: 8.5pt)
-    - Served as tech lead for the largest user-facing web application built in ReasonML with React
-    - Identified and solved critical performance issues in the high-traffic bidding client from extremely slow load times, leading migration to NextJS and handling the majority of implementation work
-    - Frontend-focused role with some backend exploration in Scala
-    - Collaborated closely with designers on user experience
-    - Worked within AWS/Kubernetes infrastructure managed by dedicated infrastructure team
+    - Was tech lead for the largest user-facing app, built in ReasonML and React
+    - Diagnosed and fixed critical performance issues in the high-traffic bidding client, leading its migration to Next.js and doing most of the implementation
   ]
 )
 
-#v(0.5em)
+#v(0.35em)
 
 #experience-entry(
   "Web and Mobile Developer",
@@ -244,11 +209,11 @@
   "2015 – 2017",
   "Reykjavík, Iceland",
   [
-    Started the summer after my first year at university. Worked on web and mobile development projects, learning C\# and the Microsoft ecosystem while discovering my preference for JavaScript and frontend development. Was assigned to learn React Native and built several mobile apps for customers, experience that directly led to my next role at Gangverk.
+    Started the summer after my first year at university, working on web and mobile projects in C\# and the Microsoft stack, where I found my preference for JavaScript and frontend. I learned React Native and shipped several customer apps, which led directly to Gangverk.
   ]
 )
 
-#v(0.5em)
+#v(0.35em)
 
 #experience-entry(
   "Lyric Tenor",
@@ -256,11 +221,44 @@
   "2011 – 2014",
   "Stralsund, Germany",
   [
-    Professional opera singer performing lead roles in productions in Germany. This career taught me discipline, working under pressure, collaboration in high-stakes environments and clear communication. These skills carried directly into software engineering.
+    Professional opera singer performing lead roles in Germany. The work taught me discipline, performance under pressure, and clear communication, all of which carry into engineering.
   ]
 )
 
-#v(2em)
+#v(0.9em)
+
+// Skills card
+#pad(left: 32pt)[
+#box(
+  width: 100%,
+  fill: block-bg,
+  radius: 3pt,
+  inset: (x: 16pt, y: 12pt),
+)[
+  #set text(size: 8.5pt, fill: primary)
+  #text(size: 9pt, weight: 500, fill: heading-color)[Skills]
+  #v(0.5em)
+
+  #grid(
+    columns: (auto, 1fr),
+    column-gutter: 14pt,
+    row-gutter: 6pt,
+
+    text(weight: 500, fill: heading-color)[AI-Native Development],
+    [Agentic workflows, multi-agent orchestration, Claude Code (custom agents, skills, hooks), building AI development tooling, prompt and context engineering, evals and QA harnesses],
+
+    text(weight: 500, fill: heading-color)[Product & Design],
+    [Product engineering, design collaboration, UX/UI thinking, user testing and iteration, accessibility, performance optimization],
+
+    text(weight: 500, fill: heading-color)[Languages & Frameworks],
+    [TypeScript, ReScript, JavaScript, React, Rust, GraphQL, HTML/CSS, Shell],
+
+    text(weight: 500, fill: heading-color)[Tools & Infrastructure],
+    [Git, AWS, Terraform, PostgreSQL, Firebase, CI/CD, Playwright],
+  )
+]]
+
+#v(0.9em)
 
 // Education & Other Work card
 #pad(left: 32pt)[
@@ -268,7 +266,7 @@
   width: 100%,
   fill: block-bg,
   radius: 3pt,
-  inset: (x: 16pt, y: 14pt),
+  inset: (x: 16pt, y: 11pt),
 )[
   #set text(size: 8pt, fill: primary)
 
@@ -288,7 +286,7 @@
       #v(-0.1em)
       #text(size: 7.5pt)[Graduated with honors, Dean's list ×2, avg 9.3]
 
-      #v(0.6em)
+      #v(0.4em)
 
       #text(weight: 600)[M.Mus in Vocal Studies]
       #h(4pt) #text(fill: muted, size: 7.5pt)[2004–2007]
@@ -297,14 +295,14 @@
       #v(-0.1em)
       #text(size: 7.5pt)[Advanced Certificate in Opera Studies]
 
-      #v(0.6em)
+      #v(0.4em)
 
       #text(weight: 600)[Vocal Studies]
       #h(4pt) #text(fill: muted, size: 7.5pt)[2002–2004]
       #v(-0.2em)
       #text(fill: muted)[Reykjavík College of Music]
 
-      #v(0.6em)
+      #v(0.4em)
 
       #text(weight: 600)[Matriculation Examination]
       #h(4pt) #text(fill: muted, size: 7.5pt)[1996–2000]
@@ -321,13 +319,13 @@
       #v(-0.2em)
       #text(fill: muted)[Reykjavík University, Spring 2020]
 
-      #v(0.6em)
+      #v(0.4em)
 
       #text(weight: 600)[Main Instructor, Mobile App Development]
       #v(-0.2em)
       #text(fill: muted)[Reykjavík University, Autumn 2018]
 
-      #v(0.6em)
+      #v(0.4em)
 
       #text(weight: 600)[Morgunblaðið]
       #h(4pt) #text(fill: muted, size: 7.5pt)[2000–2004]
