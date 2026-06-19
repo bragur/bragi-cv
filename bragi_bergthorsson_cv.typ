@@ -154,8 +154,8 @@
 
     #v(1em)
     #set text(size: 8.5pt)
-    - Built Bottega, an internal platform of self-orchestrating AI agents that carries a task through the full delivery pipeline: spec, planning, implementation, code review, and QA, backed by deterministic seed data and Playwright coverage of the real flows
-    - Deliver day-to-day features through this AI-native workflow, orchestrating custom agents and skills across parallel worktrees and reviewing the output instead of writing the code by hand
+    - Develop through an AI-native workflow built on my own agent tooling: self-orchestrating agents that carry a task from spec and planning through implementation, code review, and QA, with deterministic seed data and Playwright coverage of the real flows
+    - Orchestrate custom agents and skills across parallel worktrees, directing and reviewing the output instead of writing the code by hand
     - Shipped a patient questionnaire and intake flow across the stack: patient-portal forms with autosave and draft recovery, live status and answer views for providers, and a questionnaire service with audit events, service-to-service auth, and AWS/ECS deployment
     - Work full-stack across a React/TypeScript frontend with Node and Rust/GraphQL services, PostgreSQL, and Terraform-managed AWS
   ]
@@ -245,7 +245,7 @@
     row-gutter: 6pt,
 
     text(weight: 500, fill: heading-color)[AI-Native Development],
-    [Agentic workflows, multi-agent orchestration, Claude Code (custom agents, skills, hooks), building internal AI delivery platforms (Bottega), prompt and context engineering, evals and QA harnesses],
+    [Agentic workflows, multi-agent orchestration, Claude Code (custom agents, skills, hooks), building AI development tooling, prompt and context engineering, evals and QA harnesses],
 
     text(weight: 500, fill: heading-color)[Product & Design],
     [Product engineering, design collaboration, UX/UI thinking, user testing and iteration, accessibility, performance optimization],
