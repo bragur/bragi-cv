@@ -75,11 +75,11 @@
     #set text(fill: primary, size: 9.5pt)
     #set par(leading: 0.8em)
 
-    I'm a product engineer who's spent the last decade building digital products with a focus on UI/UX. I work closely with designers throughout development, making sure what we create is both beautiful and actually buildable, and that technical decisions improve rather than compromise the user experience. I'm drawn to teams who value craft and velocity in equal measure, who ship fast but sweat the details that matter.
+    I'm a product engineer, and I've spent the last decade building digital products with a focus on UI/UX. I like working closely with designers while we build, so that what ships looks good, is actually buildable, and the technical calls make the experience better rather than worse. I'm happiest on teams that care about craft but still move fast.
 
     #v(0.8em)
 
-    My background in photography and early interest in design shape how I think about product development. I care about the full experience: how things look, how they flow, how they respond to interaction and whether they actually solve the problem. I've spent years deeply involved in user testing and iteration, learning to balance user needs with technical feasibility while maintaining the speed needed to learn and improve.
+    My background in photography and a long interest in design shape how I approach product work. I care about the whole thing, not just how something looks but how it feels to use and whether it actually solves the problem. I've spent years close to user testing and iteration, learning where to trade off what users want against what's feasible without slowing down so much that we stop learning.
 
     #v(0.8em)
 
@@ -150,13 +150,13 @@
   "March 2026 – Present",
   "Reykjavík, Iceland",
   [
-    Joined as a full-stack developer at Leviosa, a multi-tenant EHR platform that brings scheduling, collaboration, and clinical documentation into one place for healthcare providers and their patients. I ship production features in a regulated healthcare domain, and increasingly do it through AI-driven, agentic workflows.
+    Joined as a full-stack developer at Leviosa, a practice-management platform built for healthcare providers that brings scheduling, clinical documentation, and patient flow into one place to cut administrative burden and give clinicians more time with patients. I ship production features in a regulated healthcare domain, and increasingly do it through AI-driven, agentic workflows.
 
     #v(1em)
     #set text(size: 8.5pt)
     - Develop through an AI-native workflow built on my own agent tooling: self-orchestrating agents that carry a task from spec and planning through implementation, code review, and QA, with deterministic seed data and Playwright coverage of the real flows
     - Orchestrate custom agents and skills across parallel worktrees, directing and reviewing the output instead of writing the code by hand
-    - Shipped a patient questionnaire and intake flow across the stack: patient-portal forms with autosave and draft recovery, live status and answer views for providers, and a questionnaire service with audit events, service-to-service auth, and AWS/ECS deployment
+    - Deliver features end-to-end across the stack: responsive frontend flows with autosave and draft recovery, real-time status and review views, and backend services with audit events, service-to-service auth, and AWS/ECS deployment
     - Work full-stack across a React/TypeScript frontend with Node and Rust/GraphQL services, PostgreSQL, and Terraform-managed AWS
   ]
 )
