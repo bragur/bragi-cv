@@ -181,7 +181,51 @@
   ]
 )
 
-#v(1em)
+// =====================================================
+// PAGE 3 - EARLIER EXPERIENCE + SKILLS + EDUCATION
+// =====================================================
+#pagebreak()
+#set page(margin: (left: 2.5cm, right: 2.5cm, top: 2.5cm, bottom: 2cm))
+
+#experience-entry(
+  "Web Developer",
+  "Gangverk",
+  "August 2017 – December 2020",
+  "Reykjavík, Iceland",
+  [
+    Gangverk designed and maintained the digital platform for Sotheby's auction house — a microservices architecture with Scala/Go backends and TypeScript/ReasonML React frontends. I joined on the mobile app, moved to the registration team, and stepped up as tech lead for the bidding team.
+
+    #set text(size: 8.5pt)
+    - Served as tech lead for the largest user-facing web application, built in ReasonML with React
+    - Diagnosed and fixed critical performance issues in the high-traffic bidding client, leading its migration to Next.js and handling the majority of the implementation
+  ]
+)
+
+#v(0.35em)
+
+#experience-entry(
+  "Web and Mobile Developer",
+  "Advania",
+  "2015 – 2017",
+  "Reykjavík, Iceland",
+  [
+    Started the summer after my first year at university, working on web and mobile projects in C\# and the Microsoft ecosystem while discovering my preference for JavaScript and frontend. Learned React Native and shipped several customer mobile apps — experience that led directly to Gangverk.
+  ]
+)
+
+#v(0.35em)
+
+#experience-entry(
+  "Lyric Tenor",
+  "Theater Vorpommern",
+  "2011 – 2014",
+  "Stralsund, Germany",
+  [
+    Professional opera singer performing lead roles in Germany — a career that taught me discipline, performance under pressure and clear communication that carry directly into engineering.
+  ]
+)
+
+#v(0.9em)
 
 // Skills card
 #pad(left: 32pt)[
@@ -212,59 +256,9 @@
     text(weight: 500, fill: heading-color)[Practices],
     [Code review, mentoring, technical documentation, accessibility, Shape Up methodology],
   )
-
-  #v(0.4em)
-  #text(size: 8pt, fill: muted)[#emph[Note: My experience with ReScript's strict type system provides a strong foundation for quickly adapting to TypeScript]]
 ]]
 
-// =====================================================
-// PAGE 3 - EARLIER EXPERIENCE + EDUCATION
-// =====================================================
-#pagebreak()
-#set page(margin: (left: 2.5cm, right: 2.5cm, top: 2.5cm, bottom: 2cm))
-
-#experience-entry(
-  "Web Developer",
-  "Gangverk",
-  "August 2017 – December 2020",
-  "Reykjavík, Iceland",
-  [
-    Gangverk designed and maintained the digital platform for Sotheby's auction house, working on a microservices architecture with Scala/Go backends and TypeScript/ReasonML React frontends. Initially hired to work on the Sotheby's mobile app, I moved to the registration team where my contributions led to stepping up as tech lead for the bidding team.
-
-    #set text(size: 8.5pt)
-    - Served as tech lead for the largest user-facing web application built in ReasonML with React
-    - Identified and solved critical performance issues in the high-traffic bidding client from extremely slow load times, leading migration to NextJS and handling the majority of implementation work
-    - Frontend-focused role with some backend exploration in Scala
-    - Collaborated closely with designers on user experience
-    - Worked within AWS/Kubernetes infrastructure managed by dedicated infrastructure team
-  ]
-)
-
-#v(0.5em)
-
-#experience-entry(
-  "Web and Mobile Developer",
-  "Advania",
-  "2015 – 2017",
-  "Reykjavík, Iceland",
-  [
-    Started the summer after my first year at university. Worked on web and mobile development projects, learning C\# and the Microsoft ecosystem while discovering my preference for JavaScript and frontend development. Was assigned to learn React Native and built several mobile apps for customers, experience that directly led to my next role at Gangverk.
-  ]
-)
-
-#v(0.5em)
-
-#experience-entry(
-  "Lyric Tenor",
-  "Theater Vorpommern",
-  "2011 – 2014",
-  "Stralsund, Germany",
-  [
-    Professional opera singer performing lead roles in productions in Germany. This career taught me discipline, working under pressure, collaboration in high-stakes environments and clear communication. These skills carried directly into software engineering.
-  ]
-)
-
-#v(2em)
+#v(0.9em)
 
 // Education & Other Work card
 #pad(left: 32pt)[
@@ -272,7 +266,7 @@
   width: 100%,
   fill: block-bg,
   radius: 3pt,
-  inset: (x: 16pt, y: 14pt),
+  inset: (x: 16pt, y: 11pt),
 )[
   #set text(size: 8pt, fill: primary)
 
@@ -292,7 +286,7 @@
       #v(-0.1em)
       #text(size: 7.5pt)[Graduated with honors, Dean's list ×2, avg 9.3]
 
-      #v(0.6em)
+      #v(0.4em)
 
       #text(weight: 600)[M.Mus in Vocal Studies]
       #h(4pt) #text(fill: muted, size: 7.5pt)[2004–2007]
@@ -301,14 +295,14 @@
       #v(-0.1em)
       #text(size: 7.5pt)[Advanced Certificate in Opera Studies]
 
-      #v(0.6em)
+      #v(0.4em)
 
       #text(weight: 600)[Vocal Studies]
       #h(4pt) #text(fill: muted, size: 7.5pt)[2002–2004]
       #v(-0.2em)
       #text(fill: muted)[Reykjavík College of Music]
 
-      #v(0.6em)
+      #v(0.4em)
 
       #text(weight: 600)[Matriculation Examination]
       #h(4pt) #text(fill: muted, size: 7.5pt)[1996–2000]
@@ -325,13 +319,13 @@
       #v(-0.2em)
       #text(fill: muted)[Reykjavík University, Spring 2020]
 
-      #v(0.6em)
+      #v(0.4em)
 
       #text(weight: 600)[Main Instructor, Mobile App Development]
       #v(-0.2em)
       #text(fill: muted)[Reykjavík University, Autumn 2018]
 
-      #v(0.6em)
+      #v(0.4em)
 
       #text(weight: 600)[Morgunblaðið]
       #h(4pt) #text(fill: muted, size: 7.5pt)[2000–2004]
