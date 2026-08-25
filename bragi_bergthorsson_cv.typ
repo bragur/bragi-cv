@@ -155,7 +155,7 @@
     #v(0.6em)
     #set text(size: 8.5pt)
     - Work full-stack across the platform in a regulated care domain: TypeScript/React apps for mobile, families, office, and signup, a shared design system, a GraphQL edge, and the Go microservices, Kafka consumers, and third-party integrations behind them
-    - Own the domain model for what I build — authored an ADR on the GraphQL authorization boundary and a glossary for the billing domain, and reversed an accepted design when snapshotting the invoice issuer proved the correct model
+    - Own the domain model for what I build: I write the decision records and domain vocabulary the team builds against, from the GraphQL authorization boundary to the billing domain, and reversed an accepted design when snapshotting the invoice issuer proved the correct model
     - Use custom agents and skills across parallel worktrees as the implementation layer, directing and reviewing output rather than writing most of the code by hand
     - Ship to pilot customers behind feature flags, in Icelandic and English, working closely with design on flows that hold up for a caregiver on a phone mid-visit and for coordinators managing visits at scale
   ]
