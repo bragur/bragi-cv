@@ -109,7 +109,7 @@
 #v(1fr)
 
 // =====================================================
-// PAGE 2 - RECENT EXPERIENCE (Avo + Skills)
+// PAGE 2 - RECENT EXPERIENCE (dala.care + Leviosa + Avo)
 // =====================================================
 #pagebreak()
 #set page(margin: (left: 2.5cm, right: 2.5cm, top: 3.5cm, bottom: 2cm))
@@ -146,18 +146,35 @@
 
 #experience-entry(
   "Product Engineer",
-  "Leviosa",
-  "March 2026 – Present",
+  "dala.care",
+  "August 2026 – Present",
   "Reykjavík, Iceland",
   [
-    Joined as a full-stack developer at Leviosa, a practice-management platform built for healthcare providers that brings scheduling, clinical documentation, and patient flow into one place to cut administrative burden and give clinicians more time with patients. I ship production features in a regulated healthcare domain, and increasingly do it through AI-driven, agentic workflows.
+    Product engineer at dala.care, a home care platform that reduces the complex day-to-day of home care — scheduling, care plans, and communication — to two apps that need almost no training: one for caregivers in the field, one for the office running operations at scale. At its centre is the Care Graph, mapping a care recipient to their family, caregivers, and other providers so everyone works from the same real-time picture.
 
     #v(1em)
     #set text(size: 8.5pt)
-    - Develop through an AI-native workflow built on my own agent tooling: self-orchestrating agents that carry a task from spec and planning through implementation, code review, and QA, with deterministic seed data and Playwright coverage of the real flows
+    - Ship production features in a regulated care domain through AI-native, agentic workflows, end-to-end across the caregiver app, the office administration app, and the services behind them
     - Orchestrate custom agents and skills across parallel worktrees, directing and reviewing the output instead of writing the code by hand
-    - Deliver features end-to-end across the stack: responsive frontend flows with autosave and draft recovery, real-time status and review views, and backend services with audit events, service-to-service auth, and AWS/ECS deployment
-    - Work full-stack across a React/TypeScript frontend with Node and Rust/GraphQL services, PostgreSQL, and Terraform-managed AWS
+    - Work closely with design on flows that have to hold up both for a caregiver on a phone mid-visit and for coordinators managing visits at scale
+  ]
+)
+
+#v(1em)
+
+#experience-entry(
+  "Product Engineer",
+  "Leviosa",
+  "March 2026 – July 2026",
+  "Reykjavík, Iceland",
+  [
+    Full-stack developer at Leviosa, a practice-management platform built for healthcare providers that brings scheduling, clinical documentation, and patient flow into one place to cut administrative burden and give clinicians more time with patients. I shipped production features in a regulated healthcare domain, increasingly through AI-driven, agentic workflows.
+
+    #v(1em)
+    #set text(size: 8.5pt)
+    - Built an AI-native workflow on my own agent tooling: self-orchestrating agents that carried a task from spec and planning through implementation, code review, and QA, with deterministic seed data and Playwright coverage of the real flows
+    - Delivered features end-to-end across the stack: responsive frontend flows with autosave and draft recovery, real-time status and review views, and backend services with audit events, service-to-service auth, and AWS/ECS deployment
+    - Worked full-stack across a React/TypeScript frontend with Node and Rust/GraphQL services, PostgreSQL, and Terraform-managed AWS
   ]
 )
 
