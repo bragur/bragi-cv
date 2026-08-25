@@ -154,10 +154,10 @@
 
     #v(0.6em)
     #set text(size: 8.5pt)
-    - Ship production payments end-to-end in a regulated care domain: in-app checkout and autopay in the mobile PWA, the GraphQL edge that serves them, and the Go services and Kafka consumers behind invoicing, billing entities, and the payment processor integration
-    - Own the domain model for what I build — wrote the payments glossary and an ADR on the GraphQL authorization boundary, and reversed an accepted design when snapshotting the invoice issuer turned out to be the correct model
+    - Work full-stack across the platform in a regulated care domain: TypeScript/React apps for mobile, families, office, and signup, a shared design system, a GraphQL edge, and the Go microservices, Kafka consumers, and third-party integrations behind them
+    - Own the domain model for what I build — authored an ADR on the GraphQL authorization boundary and a glossary for the billing domain, and reversed an accepted design when snapshotting the invoice issuer proved the correct model
     - Use custom agents and skills across parallel worktrees as the implementation layer, directing and reviewing output rather than writing most of the code by hand
-    - Roll features out behind flags to pilot customers, working closely with design on flows that hold up in both Icelandic and English, for a caregiver on a phone mid-visit and for coordinators managing visits at scale
+    - Ship to pilot customers behind feature flags, in Icelandic and English, working closely with design on flows that hold up for a caregiver on a phone mid-visit and for coordinators managing visits at scale
   ]
 )
 
