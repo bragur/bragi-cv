@@ -152,16 +152,15 @@
   [
     Product engineer at dala.care, a home care platform covering scheduling, care plans, billing, and communication across three audiences: caregivers in the field, coordinators running operations, and families keeping track of care and paying for it. At its centre is the Care Graph, mapping a care recipient to their family, caregivers, and other providers so everyone works from the same real-time picture.
 
-    #v(0.6em)
+    #v(1em)
     #set text(size: 8.5pt)
     - Work full-stack across the platform in a regulated care domain: TypeScript/React apps for mobile, families, office, and signup, a shared design system, a GraphQL edge, and the Go microservices, Kafka consumers, and third-party integrations behind them
-    - Own the domain model for what I build: I write the decision records and domain vocabulary the team builds against, from the GraphQL authorization boundary to the billing domain, and reversed an accepted design when snapshotting the invoice issuer proved the correct model
     - Use custom agents and skills across parallel worktrees as the implementation layer, directing and reviewing output rather than writing most of the code by hand
     - Ship to pilot customers behind feature flags, in Icelandic and English, working closely with design on flows that hold up for a caregiver on a phone mid-visit and for coordinators managing visits at scale
   ]
 )
 
-#v(0.5em)
+#v(1em)
 
 #experience-entry(
   "Product Engineer",
@@ -171,14 +170,14 @@
   [
     Full-stack developer at Leviosa, a practice-management platform for healthcare providers that brings scheduling, clinical documentation, and patient flow into one place. I shipped production features in a regulated healthcare domain, increasingly through AI-driven, agentic workflows.
 
-    #v(0.6em)
+    #v(1em)
     #set text(size: 8.5pt)
     - Built an AI-native workflow on my own agent tooling: self-orchestrating agents that carried a task from spec and planning through implementation, code review, and QA, with deterministic seed data and Playwright coverage of the real flows
     - Delivered features end-to-end across a React/TypeScript frontend and Node and Rust/GraphQL services: autosave and draft recovery, real-time status and review views, audit events, service-to-service auth, and Terraform-managed AWS/ECS deployment
   ]
 )
 
-#v(0.5em)
+#v(1em)
 
 #experience-entry(
   "Product Engineer",
@@ -188,10 +187,11 @@
   [
     Shipped features for analytics tools used by companies including Adobe, IKEA, Delivery Hero, and Wolt, working across the stack from React and ReScript frontends to Firebase functions and CI/CD, with a focus on performance, UX refinement through user testing, and developer experience. Later I brought AI-accelerated development to the team, moving from Cursor to Claude Code with custom agents and skills.
 
-    #v(0.6em)
+    #v(1em)
     #set text(size: 8.5pt)
     - Built Journeys, a complex Figma-like canvas interface that drew strong user feedback, leaning on AI-accelerated development for the harder parts
     - Built and refined the UI for AI-powered features, including agent workflows, tuning both the prompts and the interaction design
+    - Worked with designers in regular reviews, keeping the work faithful to the design and buildable
     - Led performance work: compiler improvements, data-structure redesigns (from linked-list-heavy models to ordered maps), and faster CI/CD through new bundlers, which cut load times and deployment friction
     - Helped hire and mentor engineers, looking for people who cared about craft and learning over credentials
   ]
