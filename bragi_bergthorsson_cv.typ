@@ -109,7 +109,7 @@
 #v(1fr)
 
 // =====================================================
-// PAGE 2 - RECENT EXPERIENCE (Avo + Skills)
+// PAGE 2 - RECENT EXPERIENCE (dala.care + Leviosa + Avo)
 // =====================================================
 #pagebreak()
 #set page(margin: (left: 2.5cm, right: 2.5cm, top: 3.5cm, bottom: 2cm))
@@ -146,18 +146,34 @@
 
 #experience-entry(
   "Product Engineer",
-  "Leviosa",
-  "March 2026 – Present",
+  "dala.care",
+  "August 2026 – Present",
   "Reykjavík, Iceland",
   [
-    Joined as a full-stack developer at Leviosa, a practice-management platform built for healthcare providers that brings scheduling, clinical documentation, and patient flow into one place to cut administrative burden and give clinicians more time with patients. I ship production features in a regulated healthcare domain, and increasingly do it through AI-driven, agentic workflows.
+    Product engineer at dala.care, a home care platform covering scheduling, care plans, billing, and communication across three audiences: caregivers in the field, coordinators running operations, and families keeping track of care and paying for it. At its centre is the Care Graph, mapping a care recipient to their family, caregivers, and other providers so everyone works from the same real-time picture.
 
     #v(1em)
     #set text(size: 8.5pt)
-    - Develop through an AI-native workflow built on my own agent tooling: self-orchestrating agents that carry a task from spec and planning through implementation, code review, and QA, with deterministic seed data and Playwright coverage of the real flows
-    - Orchestrate custom agents and skills across parallel worktrees, directing and reviewing the output instead of writing the code by hand
-    - Deliver features end-to-end across the stack: responsive frontend flows with autosave and draft recovery, real-time status and review views, and backend services with audit events, service-to-service auth, and AWS/ECS deployment
-    - Work full-stack across a React/TypeScript frontend with Node and Rust/GraphQL services, PostgreSQL, and Terraform-managed AWS
+    - Work full-stack across the platform in a regulated care domain: TypeScript/React apps for mobile, families, office, and signup, a shared design system, a GraphQL edge, and the Go microservices, Kafka consumers, and third-party integrations behind them
+    - Use custom agents and skills across parallel worktrees as the implementation layer, directing and reviewing output rather than writing most of the code by hand
+    - Ship to pilot customers behind feature flags, in Icelandic and English, working closely with design on flows that hold up for a caregiver on a phone mid-visit and for coordinators managing visits at scale
+  ]
+)
+
+#v(1em)
+
+#experience-entry(
+  "Product Engineer",
+  "Leviosa",
+  "March 2026 – July 2026",
+  "Reykjavík, Iceland",
+  [
+    Full-stack developer at Leviosa, a practice-management platform for healthcare providers that brings scheduling, clinical documentation, and patient flow into one place. I shipped production features in a regulated healthcare domain, increasingly through AI-driven, agentic workflows.
+
+    #v(1em)
+    #set text(size: 8.5pt)
+    - Built an AI-native workflow on my own agent tooling: self-orchestrating agents that carried a task from spec and planning through implementation, code review, and QA, with deterministic seed data and Playwright coverage of the real flows
+    - Delivered features end-to-end across a React/TypeScript frontend and Node and Rust/GraphQL services: autosave and draft recovery, real-time status and review views, audit events, service-to-service auth, and Terraform-managed AWS/ECS deployment
   ]
 )
 
@@ -169,14 +185,14 @@
   "December 2020 – January 2026",
   "Reykjavík, Iceland",
   [
-    Shipped features for analytics tools used by companies including Adobe, IKEA, Delivery Hero, and Wolt. I worked across the stack, from React and ReScript frontends to Firebase functions and CI/CD, with a focus on performance, UX refinement through user testing, and developer experience. Later I brought AI-accelerated development to the team, moving from Cursor to Claude Code with custom agents and skills, and it became how I did most of my work.
+    Shipped features for analytics tools used by companies including Adobe, IKEA, Delivery Hero, and Wolt, working across the stack from React and ReScript frontends to Firebase functions and CI/CD, with a focus on performance, UX refinement through user testing, and developer experience. Later I brought AI-accelerated development to the team, moving from Cursor to Claude Code with custom agents and skills.
 
     #v(1em)
     #set text(size: 8.5pt)
     - Built Journeys, a complex Figma-like canvas interface that drew strong user feedback, leaning on AI-accelerated development for the harder parts
     - Built and refined the UI for AI-powered features, including agent workflows, tuning both the prompts and the interaction design
-    - Led performance work: compiler improvements, data-structure redesigns (from linked-list-heavy models to ordered maps), and faster CI/CD through new bundlers, which cut load times and deployment friction
     - Worked with designers in regular reviews, keeping the work faithful to the design and buildable
+    - Led performance work: compiler improvements, data-structure redesigns (from linked-list-heavy models to ordered maps), and faster CI/CD through new bundlers, which cut load times and deployment friction
     - Helped hire and mentor engineers, looking for people who cared about craft and learning over credentials
   ]
 )
